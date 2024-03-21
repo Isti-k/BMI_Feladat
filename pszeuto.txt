@@ -1,0 +1,69 @@
+
+Próbba:
+*******
+
+main
+kiir(feladat)
+
+testmagassag()
+beker(mag:string):int
+
+testomeg()
+beker(mag:string):int
+
+bmiKiszamitasa(int t, int m)
+double bmiSzamitas(int t, int m){
+return int t/Math.pow(m/100.0,2);
+}
+kiir(szoveg:string):void
+
+ertekeles(bmi, t, m)
+ertekeles(bmi:double):void
+
+bmikiiras(bmi)
+
+kiiras(ertekeles)
+
+
+---------------------------------------------
+
+Megvalósítás:
+*************
+
+main(...){bmiFeladat()}
+
+void bmiFeladat(){
+kiir("bmi kiszamitas")
+int m = beker("testmagassag (cm)[100;200]:",100,200)
+int t = beker("tettömeg (kg)[40;150]:,40,150")
+double bmi = bmiSzamitas(t,m)
+ertekeles(bmi)
+}
+
+void ertekeles(bmi, m, t)
+kiirt("ön{m}cm magas és {t} kg tömegű...")
+
+void kiir(string szoveg){...}
+
+double bmiSzamitas(int t, int m){
+return int t/Math.pow(m/100.0,2);
+}
+
+beker(string kerdes,int also,int felso){
+kiir(kerdes)
+int adat
+ciklus
+  be:adat
+amíg adat < also
+	  > felso
+
+return adat
+}
+
+
+-----------------------------------------------
+
+van egy feladatunk egy specifikációnk és meg kell elsőnek tervezn, hogy hogy néz ki majd.
+
+
+
